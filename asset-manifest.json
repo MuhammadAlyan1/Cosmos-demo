@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Cosmos-demo/static/css/main.a3b4a9eb.css",
+    "main.js": "/Cosmos-demo/static/js/main.ac59c537.js",
+    "static/media/heroColors.png": "/Cosmos-demo/static/media/heroColors.b8c2ccf9ffc324543f80.png",
+    "index.html": "/Cosmos-demo/index.html",
+    "main.a3b4a9eb.css.map": "/Cosmos-demo/static/css/main.a3b4a9eb.css.map",
+    "main.ac59c537.js.map": "/Cosmos-demo/static/js/main.ac59c537.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3b4a9eb.css",
+    "static/js/main.ac59c537.js"
+  ]
+}
