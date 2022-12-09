@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .linksIcon {
+    @apply transition-transform duration-100 ease-in group-hover:translate-x-[2px] group-hover:-translate-y-[2px];
+  }
+
+  .navHeading {
+    @apply cursor-pointer text-2xl font-bold text-slate-400 transition-colors duration-150 ease-in;
+  }
+
+  .navHeading:hover {
+    @apply text-slate-50;
+  }
+
+  .navElements {
+    @apply w-fit pb-4 transition-colors duration-150 ease-in;
+  }
+
+  .navElements:hover {
+    @apply text-slate-400;
+  }
+
+  .desktopNavMenuContainer {
+    @apply absolute left-[-180px] isolate z-10 origin-top scale-0 pt-4 transition-all duration-200 ease-in group-hover:scale-100;
+  }
+
+  .desktopNavMenuContainer::after {
+    @apply absolute left-1/2 top-3 -z-10 h-3 w-3 -translate-x-1/2 rotate-[45deg] bg-dark content-[''];
+  }
 }
